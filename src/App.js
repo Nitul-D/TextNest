@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-    <Router>
+    <Router basename="/TextNest">
     <Navbar title = "TextNest" home = "Home" about = "About Us" mode = {mode} toggleMode = {toggleMode} />
     <Alert alert = {alert}/>
     <div className="container my-3">
