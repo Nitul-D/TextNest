@@ -68,14 +68,6 @@ npm run build
 - **Routing**: React Router DOM
 - **Build Tool**: Create React App
 
-## 📱 Screenshots
-
-### Light Mode
-![Light Mode](https://via.placeholder.com/800x400?text=TextNest+Light+Mode)
-
-### Dark Mode
-![Dark Mode](https://via.placeholder.com/800x400?text=TextNest+Dark+Mode)
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -86,15 +78,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📞 Contact
 
 Have questions or feedback? We'd love to hear from you!
 
-- **Email**: [nitulchandradutta@gmail.com](mailto:nitulchandradutta@gmail.com)
+- **Email**: [nitulchandradutta345@gmail.com](mailto:nitulchandradutta345@gmail.com)
 - **GitHub**: [Nitul-D](https://github.com/Nitul-D)
 - **LinkedIn**: [Nitul Chandra Dutta](https://www.linkedin.com/in/nitul-chandra-dutta)
 - **Facebook**: [Nitul Dutta](https://www.facebook.com/nitul.dutta.167)
