@@ -34,7 +34,7 @@ export default function Form(props){
         let newText = "";
         setText(newText);
         setSpaceCount(0);
-        props.showAlert("Text Cleared", "success");
+        props.showAlert("Cleared", "success");
     }
 
     const onReverse = () => {
@@ -47,6 +47,7 @@ export default function Form(props){
         var text = document.getElementById("myBox");
         text.select();
         navigator.clipboard.writeText(text.value);
+        document.getSelection().removeAllRanges();
         props.showAlert("Text Copied to Clipboard", "success");
     }
 
@@ -66,18 +67,18 @@ export default function Form(props){
             style={{backgroundColor : props.mode === 'light' ? 'white' : 'black',
             color : props.mode === 'dark' ? 'white' : 'black'}}></textarea>
             </div>
-            <button className="btn btn-outline-primary mx-2" onClick = {onUpClick} >Convert to Upper Case </button>
-            <button className="btn btn-outline-info mx-2" onClick = {onLowClick} >Convert to Lower Case </button>
-            <button className = "btn btn-outline-primary mx-2" onClick = {onReverse} > Reverse Text </button>
-            <button className = "btn btn-outline-info mx-2" onClick = {copyText} > Copy All </button>
-            <button className="btn btn-outline-primary mx-2" onClick = {pasteText} > Paste </button>
-            <button className = "btn btn-outline-danger mx-2" onClick = {onClearClick} > Clear All </button>
+            <button disabled={text.length ===0} className ="btn btn-outline-primary mx-2 my-2" onClick = {onUpClick} >Convert to Upper Case </button>
+            <button disabled={text.length ===0} className ="btn btn-outline-info mx-2 my-2" onClick = {onLowClick} >Convert to Lower Case </button>
+            <button disabled={text.length ===0} className = "btn btn-outline-primary mx-2 my-2" onClick = {onReverse} > Reverse Text </button>
+            <button disabled={text.length ===0} className = "btn btn-outline-info mx-2 my-2" onClick = {copyText} > Copy </button>
+            <button className ="btn btn-outline-primary mx-2 my-2" onClick = {pasteText} > Paste </button>
+            <button className = "btn btn-outline-danger mx-2 my-2" onClick = {onClearClick} > Clear </button>
         </div>
 
         <div className = "container my-4" style={{color : props.mode === 'dark' ? 'white' : 'black'}}>
             <h3> Text Summary </h3>
-            <p> {text.split(" ").length - 1} words and {text.length} characters </p>
-            <p> {0.008 * (text.split(" ").length - 1)} Minutes it will take to read the text </p>
+            <p> {text.split(" ").filter((element)=>{return element !== ''}).length} words and {text.length} characters </p>
+            <p> {0.008 * (text.split(" ").filter((element)=>{return element !== ''}).length)} Minutes it will take to read the text </p>
             <p> {spaceCount} spaces </p>
             <h4> Preview </h4>
             <p> {text.length > 0 ? text : "Enter Text Above To Preview It"} </p>

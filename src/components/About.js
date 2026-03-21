@@ -39,7 +39,7 @@ export default function About(props) {
                 </button>
                 </h2>
                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#about">
-                <div className="accordion-body">
+                <div className="accordion-body" >
                 <p>TextNest is a lightweight, web-based utility designed to help you manipulate and manage your text with ease. Whether you need to change text casing, remove extra spaces, or simply count your words, TextNest provides the tools you need in a clean, distraction-free environment.</p>
                 </div>
                 </div>
@@ -85,17 +85,17 @@ export default function About(props) {
                  <div className="accordion-body">
                 <p> Have questions or feedback? We’d love to hear from you!</p>
                 <p>
-                <a href="mailto:nitulchandradutta@gmail.com" class="footer__icon mx-5"><i class='bx bxs-envelope' ></i></a>
-                <a href="https://www.facebook.com/nitul.dutta.167" class="footer__icon mx-5"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/_nit_27" class="footer__icon mx-5"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.linkedin.com/in/nitul-chandra-dutta" class="footer__icon mx-5"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/Nitul-D" class="footer__icon mx-5"><i class='bx bxl-github' ></i></a>
+                <a href="mailto:nitulchandradutta@gmail.com" className="footer__icon mx-2"><i className='bx bxs-envelope' ></i></a>
+                <a href="https://www.facebook.com/nitul.dutta.167" className="footer__icon mx-2 my-2"><i className='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/_nit_27" className="footer__icon mx-2 my-2"><i className='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/nitul-chandra-dutta" className="footer__icon mx-2 my-2"><i className='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/Nitul-D" className="footer__icon mx-2 my-2"><i className='bx bxl-github' ></i></a>
                 </p>
                 </div>
                 </div>
             </div>
         </div>
-        <p className="footer__copy my-5 mx-5">&#169; NitulChandraDutta. All rights reserved</p>
+        <p className="footer__copy my-3 mx-5">&#169; NitulChandraDutta. All rights reserved</p>
     </div>
     </>
   );
