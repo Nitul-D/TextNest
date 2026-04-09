@@ -70,7 +70,7 @@ export default function Form(props){
             <button disabled={text.length ===0} className ="btn btn-outline-primary mx-2 my-2" onClick = {onUpClick} >Convert to Upper Case </button>
             <button disabled={text.length ===0} className ="btn btn-outline-info mx-2 my-2" onClick = {onLowClick} >Convert to Lower Case </button>
             <button disabled={text.length ===0} className = "btn btn-outline-primary mx-2 my-2" onClick = {onReverse} > Reverse Text </button>
-            <button disabled={text.length ===0} className = "btn btn-outline-info mx-2 my-2" onClick = {copyText} > Copy </button>
+            <button disabled={text.length ===0} className = "btn btn-outline-info mx-2 my-2" onClick = {copyText} > Copy      </button>
             <button className ="btn btn-outline-primary mx-2 my-2" onClick = {pasteText} > Paste </button>
             <button className = "btn btn-outline-danger mx-2 my-2" onClick = {onClearClick} > Clear </button>
         </div>

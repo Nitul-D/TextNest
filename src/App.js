@@ -1,4 +1,3 @@
-import './App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
@@ -39,7 +38,7 @@ function App() {
 
   return (
     <>
-    <Router basename="/TextNest">
+    <Router basename={process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '/'}>
     <Navbar title = "TextNest" home = "Home" about = "About Us" mode = {mode} toggleMode = {toggleMode} />
     <Alert alert = {alert}/>
     <div className="container my-3">

@@ -95,7 +95,9 @@ export default function About(props) {
                 </div>
             </div>
         </div>
-        <p className="footer__copy my-3 mx-5">&#169; NitulChandraDutta. All rights reserved</p>
+        <div className="container" style={{ textAlign: 'center', fontFamily: 'Arial, sans-serif' }}>
+            <p className="footer__copy my-3 mx-5">&#169; NitulChandraDutta. All rights reserved</p>
+        </div>
     </div>
     </>
   );
