@@ -80,7 +80,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-Have questions or feedback? We'd love to hear from you!
+Have questions or feedback? I'd love to hear from you!
 
 - **Email**: [nitulchandradutta345@gmail.com](mailto:nitulchandradutta345@gmail.com)
 - **GitHub**: [Nitul-D](https://github.com/Nitul-D)
